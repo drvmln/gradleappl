@@ -7,14 +7,14 @@ import java.io.IOException;
  *  application which might be 
  *  run only on one instance. */
 public class App {
-	/** Constant which should be returned when the other instance of application run.*/
+	/** Constant which should be returned 
+	 * when the other instance of application run.*/
 	public static final int CODE = 42;
 	
 	/** Static void to start the application.*/
     public static void main(String[] args) {
     	final String dir = System.getProperty("user.dir");
-    	System.out.println("dir: " + dir);
-    	final String pidFileName = dir +"/ThisFileShowsThatAppRun.temp";
+    	final String pidFileName = dir +"/applicationIsRunning.temp";
 	    File f = new File(pidFileName);
 	    
 	    if (!f.exists()) {
